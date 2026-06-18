@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=utf-8"%>
 <%@ page import="dto.Book"%>
+<%@ page import="dao.BookRepository"%>
 <jsp:useBean id="bookDAO" class="dao.BookRepository" scope="session" />
 
 <html>
@@ -21,6 +22,7 @@
 
             <%
                 String id=request.getParameter("id");
+                BookRepository dao = BookRepository.getInstance();
                 Book book=bookDAO.getBookId(id);
             %>
 
