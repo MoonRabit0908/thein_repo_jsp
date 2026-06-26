@@ -27,7 +27,7 @@
                                 out.println("</div>");
                             }
                         %>
-                        <form class="form-signin" action="/j_security_check" method="post">
+                        <form class="form-signin" action="j_security_check" method="post">
                             <div class="form-floating mb-3 row">
                                 <input type="text" class="form-control" name='j_username'
                                 required autofocus>
